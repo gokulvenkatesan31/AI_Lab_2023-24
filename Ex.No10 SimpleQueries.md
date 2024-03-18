@@ -1,6 +1,6 @@
 # Ex.No: 10  Logic Programming –  Simple queries from facts and rules
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:   11-03-2024                                                                         
+### REGISTER NUMBER :212221060063 
 ### AIM: 
 To write a prolog program to find the answer of query. 
 ###  Algorithm:
@@ -41,9 +41,17 @@ Consider the following facts and represent them in predicate form: <br>
 Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
 
 ### Program:
-
+"""
+likes(steve, easy_courses).
+likes(_, have_fun_courses).  % Everyone likes courses in Have fun department
+hard(science_courses).
+have_fun_course(bk301).
+likes(steve, Course) :-
+    have_fun_course(Course).
+"""
 
 ### Output:
+![Screenshot 2024-03-09 161053](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/4ecfef8c-495a-45c6-9987-6995f8c9cebe)
 
 ### Task 3:
 Consider the statement <br> 
