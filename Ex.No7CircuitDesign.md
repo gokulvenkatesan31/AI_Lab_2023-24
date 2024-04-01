@@ -19,19 +19,25 @@ and(0,0,0).
 and(0,1,0).
 and(1,1,1).
 and(1,0,0).
+xor(0,0,0).
+xor(0,1,1).
 xor(1,0,1).
 xor(1,1,0).
-xor(0,1,1).
-xor(0,0,0).
-halfadder(A,B,Sum,Carry):-
-    xor(A,B,Sum),
-    and(A,B,Carry).
+not(0,1).
+not(1,0).
+halfadder(A,B,S,C):-
+    xor(A,B,S),
+    and(A,B,C).
+halfsubtractor(A,B,Diff,Bo):-
+    xor(A,B,Diff),
+    not(A,X),
+    and(B,X,Bo).
 """
 
 
 ### Output:
 
-![313923164-fe3fe567-2dc6-48ed-9830-2c72a86ea796](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/6b7d297f-40c4-4687-a4c5-2184fd57b4dd)
+![318403496-f75665a4-dc60-493c-9694-314ef6e54467](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/0def736b-35d7-48da-abf0-7ef442fadbb1)
 
 
 ### Result:
