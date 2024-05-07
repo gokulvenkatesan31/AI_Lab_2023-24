@@ -1,5 +1,5 @@
 # Ex.No: 4   Implementation of Alpha Beta Pruning 
-### DATE:  11.03.2024                                                                   
+### DATE:  4.03.2024                                                                   
 ### REGISTER NUMBER : 212221060063
 ### AIM: 
 Write a Alpha beta pruning algorithm to find the optimal value of MAX Player from the given graph.
