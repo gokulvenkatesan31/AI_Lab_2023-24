@@ -14,33 +14,26 @@ To write a python program to implement Depth first Search.
 ### Program:
 
 ```
-    '2': ['3', '4'],
-    '3': ['5'],
-    '4': ['6','7'],
-    '6': [],
-    '5': ['6'],
-    '7':['8'],
-    '8':[]
+    graph = {
+  '5' : ['3','7'],
+  '3' : ['2', '4'],
+  '7' : ['8'],
+  '2' : [],
+  '4' : ['8'],
+  '8' : []
 }
-visited=[]
-queue=[]
-
-def bfs (visited,node,graph):
-    visited.append(node)
-    queue.append(node)
-    while queue:
-        m=queue.pop(0)
-        print(m)
-        for neighbour in graph[m]:
-            if neighbour not in visited:
-                visited.append(neighbour)
-                queue.append(neighbour)
-print("BFS order is")
-bfs(visited,'2',graph)
+visited = set() # Set to keep track of visited nodes of graph.
+def dfs(visited, graph, node):  #function for dfs
+    if node not in visited:
+        	print (node)
+        	visited.add(node)
+        	for neighbour in graph[node]:dfs(visited, graph, neighbour)
+# Driver Code
+print("Following is the Depth-First Search")
+dfs(visited,graph,'5')
 ```
 ### Output:
-
-![305600513-4598edd9-a3e0-488c-a3cf-e9abcfe997ca](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/c4c390ab-fe16-4938-a555-0c716fc82c95)
+![305602050-cf16e9e2-8484-4694-8b35-99ea692c9ff8](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/9b097cd1-68dd-47b7-a0d4-2b69a27bb3ab)
 
 
 ### Result:
