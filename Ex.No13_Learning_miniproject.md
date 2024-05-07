@@ -58,9 +58,16 @@ app.launch(share=True)
 ### Output:
 # 1. Dataset
 
+![1](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/056e0af0-dad3-472d-8502-e316ef0ed0a7)
+
 # 2. Accuracy
 
+![2](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/0f960d15-f964-4527-a3c4-41239adfbed8)
+
 # 3. Output Result
+
+![3](https://github.com/gokulvenkatesan31/AI_Lab_2023-24/assets/123715763/f6b57eaf-4259-405d-bc11-b41300ce9c7c)
+
 
 ### Result:
 Thus the system was trained successfully and the prediction was carried out.
